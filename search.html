@@ -1,0 +1,56 @@
+<h3>ค้นหา</h3>
+
+<div class="form-group">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="searchInput" placeholder="search...">
+    <div class="input-group-append">
+      <span class="input-group-text" id="searchCounter"></span>
+    </div>
+  </div>
+</div>
+  
+<table class="table table-hover table-bordered table-sm">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Tel.</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <!--<th scope="col">Handle</th>-->
+      <!--<th scope="col">Email</th>-->
+      <!--<th scope="col">Tel</th>-->
+      <!--<th scope="col">Room</th>-->
+      <!--<th scope="col">Channel</th>-->
+      <!--<th scope="col">Start</th>-->
+      <!--<th scope="col">End</th>-->
+    </tr>
+  </thead>
+  <tbody id="searchResults">
+    
+  </tbody>
+</table>
+
+<template id="rowTemplate">
+    <tr class="result-box">
+      <th class="custID text-center" scope="row">1</th>
+      <td class="firstName"></td>
+      <td class="lastName"></td>
+      <td class="tel"></td>
+      <td class="text-center"><button type="button" class="btn btn-outline-dark edit-button btn-sm">Edit</button></td>
+      <td class="text-center">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger delete-button d-none btn-sm">Confirm</button>
+          <button type="button" class="btn btn-outline-dark before-delete-button btn-sm" data-button-state="delete">Delete</button>
+        </div>
+      </td>
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+      <!--<td>@mdo</td>-->
+    </tr>
+</template>
