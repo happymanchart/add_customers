@@ -1,0 +1,79 @@
+<h3>เพิ่มข้อมูล ลูกค้า</h3>
+
+<div class="add-customer-form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="first-name">First Name</label>
+      <input type="text" class="form-control" id="first-name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="last-name">Last Name</label>
+      <input type="text" class="form-control" id="last-name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="tel">Tel.</label>
+      <input type="text" class="form-control" id="tel">
+    </div>
+    <!--
+    <div class="form-group col-md-3">
+      <label for="room">Room</label>
+      <input type="text" class="form-control" id="room">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="channel">Channel</label>
+      <input type="text" class="form-control" id="channel">
+    </div>
+    -->
+    <div class="form-group col-md-3">
+      <label for="room">Room</label>
+      <select id="room" class="form-control">
+        <option disabled selected>Choose...</option>
+        <option>N1</option>
+        <option>N2</option>
+        <option>N3</option>
+        <option>N4</option>
+        <option>N5</option>
+        <option>N6</option>
+        <option>N7</option>
+        <option>N8</option>
+        <option>N9</option>
+        <option>V3</option>
+        <option>V4</option>
+        <option>V5+V6</option>
+        <option>V7</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="channel">Channel</label>
+      <select id="channel" class="form-control">
+        <option disabled selected>Select...</option>
+        <option>Agoda</option>
+        <option>Booking.com</option>
+        <option>Facebook</option>
+        <option>Line</option>
+        <option>Web site</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="start-date">Start Date</label>
+      <input type="date" class="form-control" id="start-date">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="end-date">End Date</label>
+      <input type="date" class="form-control" id="end-date">
+    </div>
+</div>
+  <button class="btn btn-primary" id="add-customer-button">Add Customer</button>
+</div>
+
+<div class="alert alert-success invisible mt-3" id="save-success-message" role="alert">
+  เพิ่มข้อมูลลูกค้า เรียบร้อยแล้ว !!!
+</div>
